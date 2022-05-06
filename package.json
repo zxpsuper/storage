@@ -1,0 +1,64 @@
+{
+  "name": "storage",
+  "version": "1.0.0",
+  "description": "storage 管理工具",
+  "main": "lib/storage.umd.js",
+  "module": "lib/storage.es5.js",
+  "typings": "types/storage.d.ts",
+  "scripts": {
+    "start": "rollup -c rollup.config.ts -w",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch",
+    "build": "rollup -c rollup.config.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxpsuper/storage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zxpsuper/storage/issues"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testEnvironment": "node",
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**.ts"
+    ]
+  },
+  "homepage": "https://github.com/zxpsuper/storage#readme",
+  "devDependencies": {
+    "@types/jest": "^27.5.0",
+    "lodash.camelcase": "^4.3.0",
+    "rollup": "^2.70.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "ts-jest": "^28.0.1",
+    "typescript": "^4.6.3"
+  }
+}
