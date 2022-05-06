@@ -1,5 +1,5 @@
 {
-  "name": "storage",
+  "name": "@suporka/storage",
   "version": "1.0.0",
   "description": "storage 管理工具",
   "main": "lib/storage.umd.js",
